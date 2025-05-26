@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-weekit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanessa-cl/portfolio-weekit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanessa-cl/portfolio-weekit/issues"
+  },
+  "homepage": "https://github.com/vanessa-cl/portfolio-weekit#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

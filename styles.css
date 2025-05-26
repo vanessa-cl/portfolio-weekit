@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Estilo base para o projeto */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --saphire: #1a0d2e;
+  --bangkok: #65538b;
+  --flame: #e16a30;
+  --dahlia: #f4af0f;
+  --oyster: #f8e8cc;
+  --cream: #f4efe6;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo base para o header  */
+
+header {
+  background-color: var(--saphire);
+  color: var(--cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+  width: 100%;
+  position: fixed;
+  height: 64px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  font-size: 1.1rem;
+}
+
+li a {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.download-button {
+  background-color: var(--flame);
+  color: var(--cream);
+  font-size: 1rem;
+}
+
+/* Estilo base para o botão */
+
+button {
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  width: 200px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo principal */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+}
+
+/* Estilo base para as seções */
+
+section {
+  height: calc(100vh - 4rem);
+  scroll-margin-top: 4rem;
+  color: var(--saphire);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.section-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Estilo base para mensagem de próximas seções */
+
+.next-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.next-section img {
+  width: 42px;
+  height: 42px;
+}
+
+/* Estilo para a seção Home */
+
+section h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.home-wrapper {
+  flex-direction: row;
+  gap: 2rem;
+  height: 100%;
+}
+
+.home-image {
+  width: 500px;
+  height: 400px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+
+.go-to-portfolio-button {
+  font-size: 1.2rem;
+  background-color: var(--saphire);
+  color: var(--cream);
+}
+
+/* Estilo para a seção Habilidades */
+
+.skills-wrapper {
+  height: 100%;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 65%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: var(--cream);
+  color: var(--saphire);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 340px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill-card:nth-child(2n) {
+  background-color: var(--saphire);
+  color: var(--cream);
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.skill-card p {
+  font-size: 1.2rem;
+}
+
+.card {
+  box-shadow: 0px 4px 12px rgba(26, 13, 46, 0.25);
+}
+
+/* Estilo para a seção Portfólio  */
+
+.portfolio-wrapper {
+  height: 100%;
+}
+
+.portfolio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.portfolio-card {
+  background-color: var(--saphire);
+  color: var(--cream);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 340px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-card:nth-child(2n) {
+  background-color: var(--cream);
+  color: var(--saphire);
+}
+
+.portfolio-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 300px;
+}
+
+.portfolio-text {
+  padding: 2rem 1rem;
+}
+
+/* Estilo para a seção Contato/Footer  */
+
+.contact {
+  background-color: var(--saphire);
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 48px 0 0 48px;
+}
+
+.contact hr {
+  width: 100%;
+  border: 1px solid var(--bangkok);
+  margin: 2rem 0 1rem 0;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+  padding: 32px 48px;
+}
+
+.contact-wrapper h4 {
+  margin-bottom: 1rem;
+}
+
+small {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 48px;
+  height: 48px;
+}
