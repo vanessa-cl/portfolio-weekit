@@ -12,7 +12,7 @@
 :root {
   --saphire: #1a0d2e;
   --bangkok: #65538b;
-  --flame: #e16a30;
+  --flame: #fc864a;
   --dahlia: #f4af0f;
   --oyster: #f8e8cc;
   --cream: #f4efe6;
@@ -85,6 +85,7 @@ li a {
 
 .download-button {
   background-color: var(--flame);
+  color: var(--saphire);
   font-size: 1rem;
 }
 
@@ -186,8 +187,13 @@ section {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
 }
 
 /* Estilo para a seção Home */
@@ -374,7 +380,8 @@ small {
   height: 48px;
 }
 
-a:focus, .social-icons a:focus img {
+a:focus,
+.social-icons a:focus img {
   outline: 2px solid var(--flame);
   outline-offset: 4px;
 }
