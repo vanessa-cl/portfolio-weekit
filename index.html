@@ -11,7 +11,7 @@
 <body>
   <header>
     <div class="header-content">
-      <img class="avatar" src="./assets/avatar_1.svg" alt="Logo" />
+      <img class="avatar" src="./assets/avatar_1.svg" alt="Avatar da Jane Doe" />
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -21,12 +21,12 @@
         </ul>
       </nav>
     </div>
-    <button class="download-button">BAIXAR CURRÍCULO</button>
+    <a href="/caminho-para-o-curriculo" download class="download-button">BAIXAR CURRÍCULO</a>
   </header>
   <main>
     <section id="home">
       <div class="section-wrapper home-wrapper">
-        <img src="./assets/home_1.svg" alt="Imagem de exemplo" class="home-image" />
+        <img src="./assets/home_1.svg" alt="Ilustração de desenvolvimento web" class="home-image" />
         <div class="home-content">
           <div class="home-text">
             <h1>Sou uma Desenvolvedora Frontend</h1>
@@ -37,43 +37,45 @@
               consequat.</p>
           </div>
           <div>
-            <button class="go-to-portfolio-button">VER PORTFÓLIO</button>
+            <a href="#portfolio" class="go-to-portfolio-button">VER PORTFÓLIO</a>
           </div>
         </div>
       </div>
-      <div class="next-section">
+      <a class="next-section" href="#habilidades" aria-label="Ir para a seção de habilidades">
         <span>Descubra mais abaixo</span>
         <img src="./assets/seta_para_baixo.png" alt="Seta para baixo" class="arrow-down" />
-      </div>
+      </a>
     </section>
     <section id="habilidades">
       <div class="section-wrapper skills-wrapper">
         <h2>Minhas Habilidades</h2>
         <div class="skills-content">
           <div class="card skill-card">
-            <img src="./assets/icon_habilidades_1.png" alt="Imagem de exemplo" class="skill-image" />
+            <img src="./assets/icon_habilidades_1.png" alt="Ícone representando UI/UX Design" class="skill-image" />
             <h3>Design e Experiência do Usuário (UI/UX)</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore.</p>
           </div>
           <div class="card skill-card">
-            <img src="./assets/icon_habilidades_2.png" alt="Imagem de exemplo" class="skill-image" />
+            <img src="./assets/icon_habilidades_2.png" alt="Ícone representando Desenvolvimento Frontend"
+              class="skill-image" />
             <h3>Desenvolvimento Frontend</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore.</p>
           </div>
           <div class="card skill-card">
-            <img src="./assets/icon_habilidades_3.png" alt="Imagem de exemplo" class="skill-image" />
+            <img src="./assets/icon_habilidades_3.png" alt="Ícone representando Integração com Backends e APIs"
+              class="skill-image" />
             <h3>Integração com Backends e APIs</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore.</p>
           </div>
         </div>
       </div>
-      <div class="next-section">
+      <a class="next-section" href="#portfolio" aria-label="Ir para a seção de portfólio">
         <span>Veja os projetos do meu portfólio abaixo</span>
         <img src="./assets/seta_para_baixo.png" alt="Seta para baixo" class="arrow-down" />
-      </div>
+      </a>
     </section>
     <section id="portfolio">
       <div class="section-wrapper portfolio-wrapper">
@@ -105,10 +107,10 @@
           </div>
         </div>
       </div>
-      <div class="next-section">
+      <a class="next-section" href="#contato" aria-label="Ir para a seção de contato">
         <span>Entre em contato comigo abaixo</span>
         <img src="./assets/seta_para_baixo.png" alt="Seta para baixo" class="arrow-down" />
-      </div>
+      </a>
     </section>
   </main>
   <footer id="contato" class="contact">
@@ -125,23 +127,33 @@
       </div>
       <div>
         <h4>Redes sociais</h4>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img src="./assets/icon_linkedin.png" alt="LinkedIn" class="social-icon" />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="./assets/icon_instagram.png" alt="Instagram" class="social-icon" />
-          </a>
-          <a href="https://www.x.com/" target="_blank">
-            <img src="./assets/icon_x.png" alt="X" class="social-icon" />
-          </a>
-          <a href="https://www.whatsapp.com/" target="_blank">
-            <img src="./assets/icon_whatsapp.png" alt="WhatsApp" class="social-icon" />
-          </a>
-          <a href="https://www.github.com/" target="_blank">
-            <img src="./assets/icon_github.png" alt="GitHub" class="social-icon" />
-          </a>
-        </div>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="Abrir perfil no LinkedIn (nova aba)">
+              <img src="./assets/icon_linkedin.png" alt="LinkedIn" class="social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Abrir perfil no Instagram (nova aba)">
+              <img src="./assets/icon_instagram.png" alt="Instagram" class="social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.x.com/" target="_blank" aria-label="Abrir perfil no X (nova aba)">
+              <img src="./assets/icon_x.png" alt="X" class="social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com/" target="_blank" aria-label="Abrir perfil no WhatsApp (nova aba)">
+              <img src="./assets/icon_whatsapp.png" alt="WhatsApp" class="social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/" target="_blank" aria-label="Abrir perfil no GitHub (nova aba)">
+              <img src="./assets/icon_github.png" alt="GitHub" class="social-icon" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <hr>
